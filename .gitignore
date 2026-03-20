@@ -12,3 +12,7 @@ venv/
 Thumbs.db
 .env
 *.log
+
+.txtconfig
+.txtignore
+sunan-abi-dawud.txt
