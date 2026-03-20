@@ -29,9 +29,11 @@ from pathlib import Path
 from typing import Callable, Dict, Iterator, List, Optional, Union
 
 _THIS_DIR = Path(__file__).parent
+_BUNDLED = _THIS_DIR / "data" / "dawud.json.gz"
 _REPO_ROOT = _THIS_DIR.parent.parent
 _SHARED_JSON = _REPO_ROOT / "data" / "dawud.json.gz"
 _SHARED_JSON_FB = _REPO_ROOT / "data" / "dawud.json"
+
 
 _cache: Dict[str, "_Store"] = {}
 _lock = threading.Lock()
@@ -188,6 +190,8 @@ def clear_cache(data_path=None) -> None:
 def _load(data_path=None) -> _Store:
     if data_path is not None:
         return _load_from_file(Path(data_path))
+    if _BUNDLED.exists():
+        return _load_from_file(_BUNDLED)
     if _SHARED_JSON.exists():
         return _load_from_file(_SHARED_JSON)
     if _SHARED_JSON_FB.exists():
