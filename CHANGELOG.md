@@ -1,6 +1,12 @@
 # Changelog
 
-## [1.0.3] — 2026-03-20
+## [1.0.5] — 2026-03-20
+
+### FIXED:
+
+- dawud.json.gz was not found in the python bundled now fixed
+
+## [1.0.4] — 2026-03-20
 
 ### FIXED:
 
