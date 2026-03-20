@@ -10,7 +10,7 @@ cd sunan-abi-dawud
 ## Making Changes
 
 - JS changes → edit files in `src/`
-- Python changes → edit files in `python/sahih_dawud/`
+- Python changes → edit files in `python/sunan_abi_dawud/`
 - Data changes → edit `data/dawud.json` then run `node scripts/build.mjs`
 
 ## Publishing

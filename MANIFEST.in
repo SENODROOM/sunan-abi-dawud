@@ -1,4 +1,4 @@
-include python/sahih_dawud/data/dawud.json.gz
+include python/sunan_abi_dawud/data/dawud.json.gz
 exclude data/dawud.json
 prune data/chapters
 recursive-include python *.py
