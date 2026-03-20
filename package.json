@@ -1,6 +1,6 @@
 {
   "name": "sunan-abi-dawud",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Complete Sunan Abi Dawud. Offline-first, zero dependencies. CLI + Node + React/Vue/Vite.",
   "type": "module",
   "main": "./src/index.cjs",
