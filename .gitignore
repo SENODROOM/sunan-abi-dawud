@@ -1,2 +1,14 @@
-index.browser.js
 node_modules/
+src/index.browser.js
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+.DS_Store
+Thumbs.db
+.env
+*.log
